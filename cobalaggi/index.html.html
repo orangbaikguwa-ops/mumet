@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-container">
+    <h1>Kuis Pengetahuan Umum</h1>
+
+    <section id="quiz-box">
+      <p id="nomor-soal"></p>
+      <h2 id="pertanyaan"></h2>
+
+      <div id="pilihan-jawaban" class="pilihan-jawaban"></div>
+
+      <button id="btn-selanjutnya" disabled>Selanjutnya</button>
+    </section>
+
+    <section id="hasil-box" class="hidden">
+      <h2>Kuis Selesai!</h2>
+      <p id="skor-akhir"></p>
+      <!-- Pesan penyelesaian quiz -->
+      <div class="completion-message" id="completionMessage">
+        🎉 Kamu sudah menyelesaikan quiz!
+      </div>
+
+      <!-- Tombol Lanjutkan dan Selesai -->
+      <div class="button-group" id="buttonGroup">
+        <button class="btn btn-continue" id="btn-lanjutkan">Lanjutkan</button>
+        <button class="btn btn-finish" id="btn-selesai">Selesai</button>
+      </div>
+
+      <button id="btn-ulang">Ulangi Kuis</button>
+    </section>
+  </main>
+
+  <!-- Envelope Section -->
+  <div class="envelope-container" id="envelopeContainer">
+    <div class="envelope" id="envelope">
+      <div class="envelope-flap"></div>
+      <div class="envelope-pocket"></div>
+    </div>
+    <p class="envelope-instruction">Klik amplop untuk membuka</p>
+  </div>
+
+  <!-- Letter Section -->
+  <div class="letter-container" id="letterContainer">
+    <div class="letter folded" id="letter">
+      <div class="letter-content">
+        <h2>🎊 ------- 🎊</h2>
+        <p>Good evening Leena,</p>
+        <p>I Wanna say something to u</p>
+        <p>I Have a feel to u, I mean i like u</p>
+        <p style="text-align: center; margin-top: 30px; font-weight: bold; color: #c41e3a;">
+          🌟 AILEENA 🌟
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
